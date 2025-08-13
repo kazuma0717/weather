@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報アプリ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="weather-app">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="都市名を入力 (例: Tokyo)">
+            <button id="search-btn">検索</button>
+        </div>
+        <div class="weather-display">
+            <h2 id="city-name">--</h2>
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
+            <p id="temperature">--°C</p>
+            <p id="description">--</p>
+            <div class="details">
+                <p>湿度: <span id="humidity">--</span>%</p>
+                <p>風速: <span id="wind-speed">--</span>m/s</p>
+            </div>
+        </div>
+        <p id="error-message" class="error-message"></p>
+    </div>
+</body>
+</html>
